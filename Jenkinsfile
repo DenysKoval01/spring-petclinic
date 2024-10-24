@@ -10,7 +10,7 @@ pipeline {
         }
       }
       steps {
-        sh 'mvn clean verify'
+        sh 'mvn clean install -X'
       }
     }
     stage('Docker Build') {
